@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="res/jquery.min.js"></script>
+<style>
+@font-face {
+    font-family: feather;
+    src: url(res/feather_bold.otf);
+}
+body, html {
+width:100vw; height: 100vh; margin: 0;
+overflow: hidden; font-family: feather;
+background-color: #2b2a28; color: #d6700e;
+user-select: none;
+-webkit-user-select: none;
+scroll-behavior: smooth;
+}
+.top {
+width: 100vw; height: 10vh;
+display: flex; align-items: center;
+justify-content: space-between;
+}
+.title {
+font-size: 7vw;
+margin-left: 3vw;
+}
+.category-img {
+width: 10vw; height: 10vw;
+margin-right: 3vw;
+}
+
+.bottom {
+width: 100vw; height: 90vh;
+overflow-y: scroll; overflow-x: hidden;
+}
+
+.nav {
+width: 45vw; height: 15vw; background-color: #d6700e; border-radius: 10px;
+margin-top: 2vh; color: white;
+box-shadow: 1px 1px 6px black; font-size: 3.5vw;
+display: flex; justify-content: center; align-items: center;
+} 
+
+.txt {
+font-size: 5vw;
+margin:4vh 0;
+}
+.game-ct-bg {
+    width: 100vw;
+display: flex; flex-wrap: wrap; justify-content: center;
+}
+.game-ct {
+width: 90vw; height: 20vw; background-color: #d6700e; border-radius: 10px;
+box-shadow: 1px 1px 6px black; margin-top: 2vh; color: white;
+display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center;
+}
+.game-img {
+width: 15vw; height: 15vw; border-radius: 10px;
+}
+.game-txt {
+width: 60vw; font-size: 4.5vw;
+} .game-txt2 {
+width: 50vw; font-size: 4.5vw;
+}
+.lock-img {
+width: 7vw; height: 7vw;
+}
+.category-con {
+width: 100vw; height: 100vh; display: none;
+position: fixed; top: 0; left: 0;
+background-color: rgba(0, 0, 0, .5);
+}
+.category-top {
+width: 100vw; height: 60vh;
+}
+.category-bg {
+width: 100vw; height: 40vh;
+background-color: #2b2a28; border-radius: 10px 10px 0 0;
+display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center;
+animation: category-bg 400ms ease 1; transition: all 400ms ease;
+} @keyframes category-bg {
+    0% {transform: translateY(10%); opacity: 0;}
+    100% {transform: translateY(0%); opacity: 1;}
+}
+.category-ti {
+width: 100%; font-size: 8vw; margin-left: 3vw;
+}
+
+.active:active {
+transition: none;
+opacity: .4;
+}
+</style>
+</head>
+<body>
+<div class="top">
+    <div class="title">QuePlay</div>
+    <img src="res/category.png" class="category-img active">
+</div> 
+<div class="bottom">
+
+<div class="game-bg">
+
+<div class="game-ct-bg arcade" id="arcade">
+<div class="txt">Arcade</div>
+</div>
+
+<div class="game-ct-bg racing" id="racing">
+<div class="txt">Racing</div>
+</div>
+
+<div class="game-ct-bg puzzle" id="puzzle">
+<div class="txt">Puzzle</div>
+</div>
+
+<div class="game-ct-bg premium" id="premium">
+<div class="txt">Premium</div>
+</div>
+
+</div>
+</div>
+
+<div class="category-con">
+<div class="category-top"></div>
+<div class="category-bg">
+    <div class="category-ti">Categories</div>
+    <div class="nav arcade-nav active">Arcade</div>
+    <div class="nav racing-nav active">Racing</div>
+    <div class="nav puzzle-nav active">Puzzle</div>
+    <div class="nav premium-nav active">Premium</div>
+</div>
+</div>
+<script src="res/variables/arcade.js"></script>
+<script src="res/variables/racing.js"></script>
+<script src="res/variables/puzzzle.js"></script>
+<script src="res/variables/premium.js"></script>
+<script src="res/append.js"></script>
+<script>
+openedDiv = localStorage.getItem("openedDiv");
+$(document).ready(function() {
+if (localStorage.getItem("openedDiv") != null) {
+location.replace("#" + openedDiv);
+}
+
+
+$(".arcade-ct, .puzzle-ct, .racing-ct").click(function() {
+if (orie == "p") {
+    setTimeout(() => {
+        parent.location= localStorage.getItem("opened");
+        //alert("portrait");
+    }, 500);
+    return
+} if (orie == "l") {
+    setTimeout(() => {
+        parent.location= "https://landscape";
+        //alert("landscape");
+    }, 500);
+}
+});
+
+$(".premium-ct").click(function() {
+if (rewarded == 1) {
+if (orie == "p") {
+    setTimeout(() => {
+        parent.location= localStorage.getItem("opened");
+        //alert("portrait");
+    }, 500);
+    return
+} if (orie == "l") {
+    setTimeout(() => {
+        parent.location= "https://landscape";
+        //alert("landscape");
+    }, 500);
+}
+}
+});
+
+$(".nav, .category-top").click(function() {
+$(".category-bg").css({transform:'translateY(10%)', opacity:'0'});
+$(".category-con").fadeOut();
+setTimeout(() => {$(".category-bg").css({transform:'translateY(0%)', opacity:'1'});}, 420);
+});
+
+$(".arcade-nav").click(function() {
+location.replace("#arcade");
+});
+$(".racing-nav").click(function() {
+location.replace("#racing");
+});
+$(".puzzle-nav").click(function() {
+location.replace("#puzzle");
+});
+$(".premium-nav").click(function() {
+location.replace("#premium");
+});
+
+$(".category-img").click(function() {
+$(".category-con").fadeIn();
+});
+
+inter = localStorage.getItem("inter");
+$(".arcade-ct, .puzzle-ct, .racing-ct").click(function() {
+inter ++; localStorage.setItem("inter", inter);
+if (inter >= 2) {
+if (orie == "p") {
+inter = 0; localStorage.setItem("inter", inter);
+parent.location="https://inter";
+}
+}
+});
+
+$(".premium-ct").click(function() {
+if (rewarded == 1) {
+inter ++; localStorage.setItem("inter", inter);
+if (inter >= 2) {
+if (orie == "p") {
+inter = 0; localStorage.setItem("inter", inter);
+parent.location="https://inter";
+}
+} 
+}
+});
+
+$(".game-ct").click(function() {
+openedDiv = $(this).attr('id');
+localStorage.setItem("openedDiv", openedDiv);
+});
+
+}); //document ready closed
+</script>
+</body>
+</html>
