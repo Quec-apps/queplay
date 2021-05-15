@@ -80,3 +80,68 @@ parent.location="https://reward";
 }, 400);
 }
 });
+
+
+$(document).ready(function() {
+$("#arcade7").after(`
+<div class="game-ct ad-ct1 active" id="ad-ct1-1">
+<img src="res/app/brain_hit.png" class="game-img">
+<div class="game-txt2">Brain Hit</div>
+<div class="advertisement-txt">Ad</div>
+</div>
+`);
+$("#racing14").after(`
+<div class="game-ct ad-ct1 active" id="ad-ct1-2">
+<img src="res/app/brain_hit.png" class="game-img">
+<div class="game-txt2">Brain Hit</div>
+<div class="advertisement-txt">Ad</div>
+</div>
+<script>
+$(".ad-ct1").click(function() {
+parent.location="https://play.google.com/store/apps/details?id=com.quec.brain.hit";
+});
+</script>
+`);
+
+$("#racing7").after(`
+<div class="game-ct ad-ct2 active" id="ad-ct2-1">
+<img src="res/app/name_the_image.png" class="game-img">
+<div class="game-txt2">Name The Image</div>
+<div class="advertisement-txt">Ad</div>
+</div>
+`);
+$("#puzzle14").after(`
+<div class="game-ct ad-ct2 active" id="ad-ct2-2">
+<img src="res/app/name_the_image.png" class="game-img">
+<div class="game-txt2">Name The Image</div>
+<div class="advertisement-txt">Ad</div>
+</div>
+<script>
+$(".ad-ct2").click(function() {
+parent.location="https://play.google.com/store/apps/details?id=com.quec.name.the.image";
+});
+</script>
+`);
+
+$("#puzzle7").after(`
+<div class="game-ct ad-ct3 active" id="ad-ct3-1">
+<img src="res/app/queball.png" class="game-img">
+<div class="game-txt2">Queball</div>
+<div class="advertisement-txt">Ad</div>
+</div>
+`);
+$("#premium7").after(`
+<div class="game-ct ad-ct3 active" id="ad-ct3-2">
+<img src="res/app/queball.png" class="game-img">
+<div class="game-txt2">Queball</div>
+<div class="advertisement-txt">Ad</div>
+</div>
+<script>
+$(".ad-ct3").click(function() {
+parent.location="https://play.google.com/store/apps/details?id=com.quec.queball";
+});
+</script>
+`);
+
+
+});
