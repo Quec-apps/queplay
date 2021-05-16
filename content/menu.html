@@ -207,16 +207,6 @@ $(".category-img").click(function() {
 $(".category-con").fadeIn();
 });
 
-inter = localStorage.getItem("inter");
-$(".arcade-ct, .puzzle-ct, .racing-ct").click(function() {
-inter ++; localStorage.setItem("inter", inter);
-if (inter >= 2) {
-if (orie == "p") {
-inter = 0; localStorage.setItem("inter", inter);
-parent.location="https://inter";
-}
-}
-});
 
 $(".premium-ct").click(function() {
 if (rewarded == 1) {
@@ -233,6 +223,7 @@ parent.location="https://inter";
 $(".game-ct").click(function() {
 openedDiv = $(this).attr('id');
 localStorage.setItem("openedDiv", openedDiv);
+
 });
 
 }); //document ready closed

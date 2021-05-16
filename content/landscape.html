@@ -8,7 +8,7 @@
 </head>
 <style>
 body {
-background-color: #2b2a28;
+    background-color: #2b2a28;
 }
 </style>
 <body>
@@ -16,10 +16,6 @@ background-color: #2b2a28;
 <script>
 opened = localStorage.getItem("opened");
 inter = localStorage.getItem("inter");
-if (inter >= 2) {
-inter = 0; localStorage.setItem("inter", inter);
-parent.location="https://inter";
-}
 setTimeout(() => {
 location.replace(opened);
 }, 400);
