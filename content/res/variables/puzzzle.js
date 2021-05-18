@@ -121,5 +121,136 @@ window["p_url_" + Inc] = "https://play.famobi.com/woblox";
 window["p_ori_" + Inc] = "p";
 Inc ++;
 
+window["p_t_" + Inc] = "Doctor Acorn 2";
+window["p_img_" + Inc] = "acorn2";
+window["p_url_" + Inc] = "https://play.famobi.com/doctor-acorn-2";
+window["p_ori_" + Inc] = "p";
+Inc ++;
 
-puzzleTotal = 20;
+window["p_t_" + Inc] = "SWOOOP";
+window["p_img_" + Inc] = "swooop";
+window["p_url_" + Inc] = "https://play.famobi.com/swooop";
+window["p_ori_" + Inc] = "l";
+Inc ++;
+
+window["p_t_" + Inc] = "Ojello";
+window["p_img_" + Inc] = "objello";
+window["p_url_" + Inc] = "https://play.famobi.com/ojello";
+window["p_ori_" + Inc] = "p";
+Inc ++;
+
+window["p_t_" + Inc] = "Pilot Heroes";
+window["p_img_" + Inc] = "pilot";
+window["p_url_" + Inc] = "https://play.famobi.com/pilot-heroes";
+window["p_ori_" + Inc] = "p";
+Inc ++;
+
+window["p_t_" + Inc] = "Domino Shades";
+window["p_img_" + Inc] = "domino";
+window["p_url_" + Inc] = "https://play.famobi.com/domino-shades";
+window["p_ori_" + Inc] = "p";
+Inc ++;
+
+window["p_t_" + Inc] = "Jelly Collapse";
+window["p_img_" + Inc] = "jelly";
+window["p_url_" + Inc] = "https://play.famobi.com/jelly-collapse";
+window["p_ori_" + Inc] = "p";
+Inc ++;
+
+window["p_t_" + Inc] = "Color Pixel Art Classic";
+window["p_img_" + Inc] = "pixel";
+window["p_url_" + Inc] = "https://play.famobi.com/color-pixel-art-classic";
+window["p_ori_" + Inc] = "p";
+Inc ++;
+
+window["p_t_" + Inc] = "1212";
+window["p_img_" + Inc] = "1212";
+window["p_url_" + Inc] = "https://play.famobi.com/1212";
+window["p_ori_" + Inc] = "p";
+Inc ++;
+
+window["p_t_" + Inc] = "4x Puzzle";
+window["p_img_" + Inc] = "4x";
+window["p_url_" + Inc] = "https://play.famobi.com/4x-puzzle";
+window["p_ori_" + Inc] = "p";
+Inc ++;
+
+window["p_t_" + Inc] = "Bunny Quest";
+window["p_img_" + Inc] = "bunny";
+window["p_url_" + Inc] = "https://play.famobi.com/bunny-quest";
+window["p_ori_" + Inc] = "p";
+Inc ++;
+
+window["p_t_" + Inc] = "Tap My Water";
+window["p_img_" + Inc] = "tap";
+window["p_url_" + Inc] = "https://play.famobi.com/tap-my-water";
+window["p_ori_" + Inc] = "p";
+Inc ++;
+
+window["p_t_" + Inc] = "Word Detector";
+window["p_img_" + Inc] = "word";
+window["p_url_" + Inc] = "https://play.famobi.com/word-detector";
+window["p_ori_" + Inc] = "p";
+Inc ++;
+
+window["p_t_" + Inc] = "Jungle Roller";
+window["p_img_" + Inc] = "jungle";
+window["p_url_" + Inc] = "https://play.famobi.com/jungle-roller";
+window["p_ori_" + Inc] = "p";
+Inc ++;
+
+window["p_t_" + Inc] = "Pipe Mania";
+window["p_img_" + Inc] = "pipe";
+window["p_url_" + Inc] = "https://play.famobi.com/pipe-mania";
+window["p_ori_" + Inc] = "p";
+Inc ++;
+
+window["p_t_" + Inc] = "Cat Around The World";
+window["p_img_" + Inc] = "cat";
+window["p_url_" + Inc] = "https://play.famobi.com/cat-around-the-world";
+window["p_ori_" + Inc] = "l";
+Inc ++;
+
+window["p_t_" + Inc] = "Zop";
+window["p_img_" + Inc] = "zop";
+window["p_url_" + Inc] = "https://play.famobi.com/zop";
+window["p_ori_" + Inc] = "p";
+Inc ++;
+
+window["p_t_" + Inc] = "Prism";
+window["p_img_" + Inc] = "prism";
+window["p_url_" + Inc] = "https://play.famobi.com/prism";
+window["p_ori_" + Inc] = "p";
+Inc ++;
+
+window["p_t_" + Inc] = "Miner Block";
+window["p_img_" + Inc] = "miner";
+window["p_url_" + Inc] = "https://play.famobi.com/miner-block";
+window["p_ori_" + Inc] = "p";
+Inc ++;
+
+window["p_t_" + Inc] = "Playful Kitty";
+window["p_img_" + Inc] = "playful";
+window["p_url_" + Inc] = "https://play.famobi.com/playful-kitty";
+window["p_ori_" + Inc] = "p";
+Inc ++;
+
+window["p_t_" + Inc] = "Hold My Hand, Friend";
+window["p_img_" + Inc] = "hold";
+window["p_url_" + Inc] = "https://play.famobi.com/hold-my-hand-friend";
+window["p_ori_" + Inc] = "l";
+Inc ++;
+
+window["p_t_" + Inc] = "Bravebull Pirates";
+window["p_img_" + Inc] = "bravebull";
+window["p_url_" + Inc] = "https://play.famobi.com/bravebull-pirates";
+window["p_ori_" + Inc] = "l";
+Inc ++;
+
+window["p_t_" + Inc] = "";
+window["p_img_" + Inc] = "";
+window["p_url_" + Inc] = "";
+window["p_ori_" + Inc] = "p";
+Inc ++;
+
+puzzleTotal = 41;
