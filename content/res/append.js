@@ -55,6 +55,7 @@ $(".premium").append(`
 <script>
 $(".premium${z}").click(function() {
 orie = "${window["pr_ori_" + z]}";
+rewarded = localStorage.getItem("rewarded");
 if (rewarded == 1) {
 localStorage.setItem("opened", "${window["pr_url_" + z]}");
 }
