@@ -69,7 +69,7 @@ $(".lock-img").css({opacity:'0'});
 }
 
 $(".premium-ct").click(function() {
-if (rewarded == 0) {
+if (localStorage.getItem("rewarded") == 0) {
 setInterval(() => {
 rewarded = localStorage.getItem("rewarded");
 if (rewarded == 1) {
