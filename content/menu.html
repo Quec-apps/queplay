@@ -181,6 +181,11 @@ if (orie == "p") {
         //alert("landscape");
     }, 500);
 }
+} else {
+    setInterval(() => {
+    rewarded = localStorage.getItem("rewarded");
+}, 500);
+parent.location="https://reward";
 }
 });
 
@@ -205,19 +210,6 @@ location.replace("#premium");
 
 $(".category-img").click(function() {
 $(".category-con").fadeIn();
-});
-
-
-$(".premium-ct").click(function() {
-if (rewarded == 1) {
-inter ++; localStorage.setItem("inter", inter);
-if (inter >= 2) {
-if (orie == "p") {
-inter = 0; localStorage.setItem("inter", inter);
-parent.location="https://inter";
-}
-} 
-}
 });
 
 $(".game-ct").click(function() {
